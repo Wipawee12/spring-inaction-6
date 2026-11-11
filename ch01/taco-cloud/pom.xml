@@ -8,7 +8,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.2.2</version>   <!--1-->
+    <version>4.1.2</version>   <!--1-->
     <relativePath />
   </parent>
   <groupId>sia</groupId>
@@ -18,7 +18,7 @@
   <description>Taco Cloud Example</description>
 
   <properties>
-    <java.version>17</java.version>
+    <java.version>21</java.version>
   </properties>
 
   <dependencies>
@@ -41,22 +41,39 @@
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
+      <artifactId>spring-boot-starter-webmvc-test</artifactId>
       <scope>test</scope>
     </dependency>
 
-<!-- end::allButSelenium[] -->
+<dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <scope>test</scope>
     </dependency>
 
+    
+
+<!-- end::allButSelenium[] -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>htmlunit-driver</artifactId>
+      <version>4.18.1</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>htmlunit-driver</artifactId>
+      <version>4.13.0</version>
+      <scope>test</scope>
+    </dependency>
+
 <!-- tag::allButSelenium[] -->
   </dependencies>
 
